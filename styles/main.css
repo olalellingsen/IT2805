@@ -1,0 +1,304 @@
+/* CSS Reset
+ *
+ * We are using a CSS reset because a lot of the default properties and styles
+ * vary across various browsers. This leaves us with some consistency
+ */
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+footer,
+header,
+nav,
+table,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  border: 0;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  /* -Skal vi ha en felles bakgrunn på body? */
+  line-height: 1;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Global variables
+ *
+ * Globally available CSS variables makes it easy to deal with consistent
+ * styling across the entire user interface.
+ *
+ * This also makes it extremely easy if the client changes their mind and want
+ * to use other colors for their website.
+ */
+
+:root {
+  --color-primary: #bf1e2e;
+  --color-shadow: #eeeeee;
+  --color-black: #000000;
+
+  --spacing-small: 4px;
+  --spacing-medium: 8px;
+  --spacing-large: 16px;
+  --spacing-navbar-height: calc(
+    4 * var(--spacing-large) + var(--text-size-large)
+  );
+
+  --font-lato: "Lato", sans-serif;
+
+  --text-size-medium: 1.25rem;
+  --text-size-large: 2rem;
+
+  --main-max-width: 1024px;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --text-size-medium: 1rem;
+    --text-size-large: 1.5rem;
+  }
+}
+
+/* Component: Typography
+ *
+ * Styling rules for text components
+ */
+
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-lato);
+  letter-spacing: -0.025rem;
+  text-transform: uppercase;
+}
+
+p,
+a {
+  font-size: var(--text-size-medium);
+}
+
+a {
+  color: var(--color-primary);
+}
+
+h1 {
+  font-size: var(--text-size-large);
+}
+
+/* Component: Navigation bar
+ *
+ * These are all the styles applied to the navigation bar and the classes that
+ * are used for it
+ */
+
+.nav {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  background-color: var(--color-shadow);
+  padding: var(--spacing-large);
+
+  position: fixed;
+  top: 0;
+
+  z-index: 1;
+}
+
+.nav-expand-icon {
+  display: none;
+}
+
+.nav-section,
+.nav-brand-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.nav-item {
+  padding: var(--spacing-large);
+  /* Override the basic text styles to match header */
+  color: var(--color-black);
+  font-size: var(--text-size-large);
+  font-weight: 700;
+  /* Navigation header links are uppercase and do not have underlines */
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav-logo {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.4s;
+}
+.nav-logo:hover,
+.nav-expand-icon:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.nav-icon {
+  margin: var(--spacing-large);
+  /* Ensure icon is same size as text */
+  width: var(--text-size-large);
+  height: var(--text-size-large);
+}
+
+@media (min-width: 1440px) {
+  .nav-section-content-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 1440px) {
+  .nav {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .nav-section-content-desktop {
+    display: none;
+  }
+
+  .nav-expand-icon {
+    display: inline-block;
+    transition: transform 0.4s;
+  }
+
+  .nav-brand-section {
+    justify-content: space-between;
+  }
+
+  .nav-section {
+    flex-direction: column;
+  }
+}
+
+.nav-item {
+  border-bottom: 3px solid transparent;
+}
+
+.nav-item:hover {
+  border-bottom: 3px solid var(--color-primary);
+}
+
+/* Component: Footer
+ *
+ * This component is the footer which is at the bottom of each page.
+ */
+
+.footer {
+  width: 100%;
+  background-color: var(--color-shadow);
+  padding: var(--spacing-large);
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: space-between;
+}
+
+.footer > section > h2 {
+  margin-bottom: var(--spacing-large);
+}
+
+.footer-brands {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-large);
+  height: 80px;
+}
+
+.footer img {
+  height: 40px;
+}
+
+@media (max-width: 1440px) {
+  .footer-brands {
+    display: flex;
+    flex-direction: row;
+    /* column-gap: var(--spacing-large);
+    row-gap: var(--spacing-large); */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer-social-links {
+    flex-direction: row;
+  }
+  .footer-brands{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Component: Main content
+ *
+ * This component is used to restrict the width of the main content
+ */
+.main-content {
+  /* Offset by the dynamic width of the navigation bar because it's fixed and always on top */
+  padding: calc(var(--spacing-navbar-height) + var(--spacing-large))
+    var(--spacing-large) var(--spacing-large) var(--spacing-large);
+  margin: 0 auto;
+  max-width: var(--main-max-width);
+  min-height: calc(
+    100vh - var(--spacing-navbar-height) - 2 * var(--spacing-large)
+  );
+}
+
+/**
+ * Component: expand-image.js
+/* Page: index.html
+ *
+ * Styles which are specific to the index.html file
+ */
+
+.nowDark {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background-color: #323232;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+}
+.sizeImageBig {
+  width: 40%;
+  position: fixed;
+  top: 100px;
+  left: 30%;
+}

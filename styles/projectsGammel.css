@@ -1,0 +1,122 @@
+.projects_1 {
+  width: auto;
+  height: 400px;
+  cursor: pointer;
+}
+.projects_2 {
+  background-color: #eeeeee;
+  width: auto;
+  height: 400px;
+  cursor: pointer;
+  overflow-y: hidden;
+}
+.projectImagesTop {
+  float: left;
+  height: 396px;
+  width: auto;
+  max-width: 550px;
+  padding-right: 10px;
+}
+.projectImagesBottom {
+  float: right;
+  height: 396px;
+  width: auto;
+  max-width: 550px;
+  padding-left: 10px;
+}
+p {
+  text-transform: none;
+}
+.parOdd {
+  text-align: left;
+  height: 0px;
+  width: auto;
+  overflow-y: hidden;
+}
+.parEven {
+  text-align: left;
+  height: 0px;
+  width: auto;
+  overflow-y: hidden;
+  background-color: #eeeeee;
+}
+.headerLeft {
+  display: inline-block;
+  max-width: 370px;
+}
+.headerRight {
+  display: inline-block;
+  max-width: 370px;
+}
+.completeHeaderLeft {
+  margin-top: 10%;
+  display: inline-block;
+  padding-left: 3%;
+}
+.completeHeaderRight {
+  margin-top: 10%;
+  display: inline-block;
+  padding-left: 3%;
+}
+.expandMore {
+  height: 25px;
+}
+.expandLess {
+  padding-top: 15px;
+  margin-left: 45%;
+}
+/* Koden under sier hva som skal endres når skjermbredden blir mindre enn 1015px, 800px og 570px */
+@media screen and (max-width: 1015px) {
+  .projects_1,
+  .projects_2 {
+    height: 200px;
+  }
+  .projectImagesBottom,
+  .projectImagesTop {
+    height: 196px;
+  }
+  .completeHeaderLeft,
+  .completeHeaderRight {
+    margin-top: 5%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .projects_1,
+  .projects_2 {
+    height: 150px;
+  }
+  .projectImagesBottom,
+  .projectImagesTop {
+    height: 146px;
+  }
+  .completeHeaderLeft,
+  .completeHeaderRight {
+    margin-top: "";
+  }
+  .headerLeft,
+  .headerRight {
+    max-width: 250px;
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .projects_1,
+  .projects_2 {
+    height: 150px;
+  }
+  .projectImagesBottom,
+  .projectImagesTop {
+    height: 146px;
+  }
+  .completeHeaderLeft,
+  .completeHeaderRight {
+    margin-top: "";
+  }
+  .headerLeft,
+  .headerRight {
+    max-width: 100px;
+    font-size: 90%;
+  }
+}

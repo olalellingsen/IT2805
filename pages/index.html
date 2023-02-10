@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="no" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Det Nye Norske Storband</title>
+    <link rel="icon" type="img/png" href="images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/index.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/slideshow.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/sort-calendar.css" />
+
+    <script src="./scripts/components/modularity.js"></script>
+    <script src="./scripts/components/nav.js"></script>
+    <script src="./scripts/components/footer.js"></script>
+  </head>
+  <body>
+    <div class="app-nav"></div>
+    <div class="index-banner"></div>
+    <div class="band-name-header">
+      <h1 id="banner">Det Nye Norske Storband</h1>
+    </div>
+    <main class="content-grid-wrapper">
+      <div class="content-grid">
+        <div id="content-grid-slideshow">
+          <div class="slideshow">
+            <div class="slider">
+              <div class="slides">
+                <input type="radio" name="button" id="button1" />
+                <input type="radio" name="button" id="button2" />
+                <input type="radio" name="button" id="button3" />
+                <input type="radio" name="button" id="button4" />
+                <input type="radio" name="button" id="button5" />
+                <!-- <input type="radio" name="button" id="button6" />
+                <input type="radio" name="button" id="button7" /> -->
+
+                <div class="slide first">
+                  <img
+                    src="./images/slides/compressed/img1-min.jpg"
+                    alt="Bilde 1"
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    src="./images/slides/compressed/img2-min.jpg"
+                    alt="Bilde 2"
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    src="./images/slides/compressed/img3-min.jpg"
+                    alt="Bilde 3"
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    src="./images/slides/compressed/img4-min.jpg"
+                    alt="Bilde 4"
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    src="./images/slides/compressed/img5-min.jpg"
+                    alt="Bilde 5"
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    src="./images/slides/compressed/img7-min.jpg"
+                    alt="Bilde 6"
+                  />
+                </div>
+
+                <div class="auto-nav">
+                  <div class="auto-button1"></div>
+                  <div class="auto-button2"></div>
+                  <div class="auto-button3"></div>
+                  <div class="auto-button4"></div>
+                  <div class="auto-button5"></div>
+                  <!-- <div class="auto-button6"></div>
+                  <div class="auto-button7"></div> -->
+                </div>
+              </div>
+              <div class="nav-menu">
+                <label for="button1" class="menu-button"></label>
+                <label for="button2" class="menu-button"></label>
+                <label for="button3" class="menu-button"></label>
+                <label for="button4" class="menu-button"></label>
+                <label for="button5" class="menu-button"></label>
+                <!-- <label for="button6" class="menu-button"></label>
+                <label for="button7" class="menu-button"></label> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <!-- the music player gotten from https://developer.spotify.com/documentation/widgets/generate/embed/-->
+          <iframe
+            id="spotify-player"
+            src="https://open.spotify.com/embed/artist/07RkGtZNwFOTFyVFEw4cMY"
+            width="300"
+            height="300"
+            style="border: 0"
+            allow="encrypted-media"
+          >
+          </iframe>
+        </div>
+        <div id="cal-box">
+          <h3 id="cal-header">Kommende konserter</h3>
+          <div id="upcoming-concerts"></div>
+        </div>
+      </div>
+    </main>
+    <div class="app-footer"></div>
+    <script src="./scripts/slideshow.js"></script>
+    <script src="./scripts/nextConcerts.js"></script>
+  </body>
+</html>

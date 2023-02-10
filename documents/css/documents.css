@@ -1,0 +1,58 @@
+body {
+  background-color: white;
+  color: #212121;
+  margin: 0 0 24px 0;
+  font-family: "Fira Sans", sans-serif;
+}
+
+section h1 {
+  font-weight: 800;
+  font-size: 3rem;
+  letter-spacing: -0.05em;
+  margin: 0;
+}
+
+section h2 {
+  font-weight: 800;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+section p {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.heading {
+  padding: 64px 0;
+  background-color: #29b6f6;
+}
+
+.content {
+  max-width: 768px;
+  margin: 16px auto;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+.funksjonelle {
+  background-color: orange;
+}
+
+.ikke-funksjonelle {
+  background-color: lightblue;
+}
+
+.image-container {
+  text-align: center;
+  width: 100%;
+}
+
+.image-container > img {
+  max-width: 80%;
+  background-repeat: no-repeat;
+}

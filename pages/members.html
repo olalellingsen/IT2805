@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="no" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Det Nye Norske Storband &mdash; Medlemmer</title>
+    <link rel="icon" type="img/png" href="images/logo.png" />
+
+    <!-- Google Fonts & main.css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/members.css" />
+
+    <script src="./scripts/components/modularity.js"></script>
+    <script src="./scripts/components/nav.js"></script>
+    <script src="./scripts/components/footer.js"></script>
+  </head>
+  <body>
+    <div class="app-nav"></div>
+    <main class="main-content">
+      <h1 id="memberHeader">Våre medlemmer</h1>
+      <div class="member-search-form">
+        <label>
+          <input
+            type="text"
+            id="member-search-input"
+            placeholder="Søk etter medlem"
+          />
+        </label>
+        <label>
+          <select id="instrument-search-input">
+            <option value="all">Instrumentgruppe</option>
+          </select>
+        </label>
+      </div>
+      <!-- This is the member card grid which will be populated with members -->
+      <div id="member-list" class="member-list"></div>
+    </main>
+    <div class="app-footer"></div>
+    <script src="./scripts/member-search.js"></script>
+    <script src="./scripts/expand-image.js"></script>
+  </body>
+</html>
