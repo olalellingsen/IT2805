@@ -22,16 +22,16 @@ class AppNavbar extends ModularityComponent {
         <img class="nav-icon nav-expand-icon" src="/images/reorder.png" alt="Utvid dropdown meny">
       </div>
       <div class="nav-section nav-section-content-desktop">
-        <a class="nav-item" href="/members.php">Medlemmer</a>
-        <a class="nav-item" href="/projectsNy.php">Prosjekter</a>
-        <a class="nav-item" href="/about.php">Om Oss</a>
-        <a class="nav-item" href="/contact.php">Kontakt Oss</a>
+        <a class="nav-item" href="/pages/members.php">Medlemmer</a>
+        <a class="nav-item" href="/pages/projectsNy.php">Prosjekter</a>
+        <a class="nav-item" href="/pages/about.php">Om Oss</a>
+        <a class="nav-item" href="/pages/contact.php">Kontakt Oss</a>
       </div>
       <div class="nav-section nav-section-content-mobile">
-        <a class="nav-item" href="/members.php">Medlemmer</a>
-        <a class="nav-item" href="/projectsNy.php">Prosjekter</a>
-        <a class="nav-item" href="/about.php">Om Oss</a>
-        <a class="nav-item" href="/contact.php">Kontakt Oss</a>
+        <a class="nav-item" href="/pages/members.php">Medlemmer</a>
+        <a class="nav-item" href="/pages/projectsNy.php">Prosjekter</a>
+        <a class="nav-item" href="/pages/about.php">Om Oss</a>
+        <a class="nav-item" href="/pages/contact.php">Kontakt Oss</a>
       </div>
     </nav>
     `
