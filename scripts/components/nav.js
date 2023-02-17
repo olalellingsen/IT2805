@@ -16,22 +16,22 @@ class AppNavbar extends ModularityComponent {
     return `
     <nav class="nav">
       <div class="nav-brand-section">
-      <a href="./index.php"><img class="nav-logo" src="./images/logo.png"
+      <a href="/index.php"><img class="nav-logo" src="/images/logo.png"
         alt="Det Norske Nye Storband Logo">
-        <a class="nav-item" href="./index.php">Det Nye Norske Storband</a>
-        <img class="nav-icon nav-expand-icon" src="./images/reorder.png" alt="Utvid dropdown meny">
+        <a class="nav-item" href="/index.php">Det Nye Norske Storband</a>
+        <img class="nav-icon nav-expand-icon" src="/images/reorder.png" alt="Utvid dropdown meny">
       </div>
       <div class="nav-section nav-section-content-desktop">
-        <a class="nav-item" href="./members.php">Medlemmer</a>
-        <a class="nav-item" href="./projectsNy.php">Prosjekter</a>
-        <a class="nav-item" href="./about.php">Om Oss</a>
-        <a class="nav-item" href="./contact.php">Kontakt Oss</a>
+        <a class="nav-item" href="/members.php">Medlemmer</a>
+        <a class="nav-item" href="/projectsNy.php">Prosjekter</a>
+        <a class="nav-item" href="/about.php">Om Oss</a>
+        <a class="nav-item" href="/contact.php">Kontakt Oss</a>
       </div>
       <div class="nav-section nav-section-content-mobile">
-        <a class="nav-item" href="./members.php">Medlemmer</a>
-        <a class="nav-item" href="./projectsNy.php">Prosjekter</a>
-        <a class="nav-item" href="./about.php">Om Oss</a>
-        <a class="nav-item" href="./contact.php">Kontakt Oss</a>
+        <a class="nav-item" href="/members.php">Medlemmer</a>
+        <a class="nav-item" href="/projectsNy.php">Prosjekter</a>
+        <a class="nav-item" href="/about.php">Om Oss</a>
+        <a class="nav-item" href="/contact.php">Kontakt Oss</a>
       </div>
     </nav>
     `
