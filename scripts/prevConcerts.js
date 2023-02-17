@@ -12,6 +12,7 @@ class concert {
 //legg til nye konserter her
 const concerts = [
   
+  new concert('16.02.2023','Det Rekomponerte Nye', '20:00', 'Victoria Nasjonal Jazzscene, Oslo'),
   new concert('16.12.2022','NSBs jul', '20.00', 'Ilen Kirke, Trondheim'),
   new concert('15.12.2022','NSBs jul', '20.00', 'Parkbiografen, Skien'),
   new concert('14.12.2022','NSBs jul', '20.00', 'St.Croixhuset, Fredrikstad'),

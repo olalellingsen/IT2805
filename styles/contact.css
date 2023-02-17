@@ -83,7 +83,6 @@ textarea {
 input[type="text"]:hover,
 input[type="email"]:hover,
 textarea:hover,
-.contacts:hover,
 #submit:hover {
   border: solid 1px #bf1e2e;
   transition: 500ms;
