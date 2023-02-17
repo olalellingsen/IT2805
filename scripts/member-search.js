@@ -8,26 +8,26 @@ const memberList = document.querySelector('#member-list')
  * maintain the website.
  */
 const members = [
-  { image: './images/band-members/NSBportretter-nett@veronicavangroningen-10.jpg', name: 'Oskar Lindeberget', instrument: 'Altsax/Sopransax',category: 'Saxofon' },
-  { image: './images/band-members/NSBportretter-nett@veronicavangroningen-2.jpg', name: 'Aksel Rønning', instrument: 'Altsax/Fløyte', category: 'Saxofon'},
-  { image: './images/band-members/NSBportretter-nett@veronicavangroningen-37.jpg', name: 'Erik Egge Jordheim', instrument: 'Tenorsax',category: 'Saxofon' },
-  { image: './images/band-members/NSBportretter-nett@veronicavangroningen-6.jpg', name: 'Zakarias Meyer Øverli', instrument: 'Tenorsax', category: 'Saxofon' },
-  { image: './images/band-members/sol.jpg'                                      , name: 'Sol Léna-Schroll', instrument: 'Barytonsax',category: 'Saxofon' },
+  { image: '/images/band-members/NSBportretter-nett@veronicavangroningen-10.jpg', name: 'Oskar Lindeberget', instrument: 'Altsax/Sopransax',category: 'Saxofon' },
+  { image: '/images/band-members/NSBportretter-nett@veronicavangroningen-2.jpg', name: 'Aksel Rønning', instrument: 'Altsax/Fløyte', category: 'Saxofon'},
+  { image: '/images/band-members/NSBportretter-nett@veronicavangroningen-37.jpg', name: 'Erik Egge Jordheim', instrument: 'Tenorsax',category: 'Saxofon' },
+  { image: '/images/band-members/NSBportretter-nett@veronicavangroningen-6.jpg', name: 'Zakarias Meyer Øverli', instrument: 'Tenorsax', category: 'Saxofon' },
+  { image: '/images/band-members/sol.jpg'                                      , name: 'Sol Léna-Schroll', instrument: 'Barytonsax',category: 'Saxofon' },
 
-  { image: './images/band-members/NSBportretter-nett@veronicavangroningen-32.jpg', name: 'Jørgen Bjelkerud', instrument: 'Trombone',category: 'Trombone/Tuba' },
-  { image: './images/band-members/peter.jpg'                                     , name: 'Peter Robertstad', instrument: 'Trombone',category: 'Trombone/Tuba' },
-  { image: './images/band-members/NSBportretter-nett@veronicavangroningen-41.jpg', name: 'Astrid Ombudstvedt', instrument: 'Trombone' ,category: 'Trombone/Tuba'},
-  { image: './images/band-members/NSBportretter-nett@veronicavangroningen-17.jpg', name: 'Jesper Kramer-Johansen', instrument: 'Tuba/Cimbasso' ,category: 'Trombone/Tuba'},
+  { image: '/images/band-members/NSBportretter-nett@veronicavangroningen-32.jpg', name: 'Jørgen Bjelkerud', instrument: 'Trombone',category: 'Trombone/Tuba' },
+  { image: '/images/band-members/peter.jpg'                                     , name: 'Peter Robertstad', instrument: 'Trombone',category: 'Trombone/Tuba' },
+  { image: '/images/band-members/NSBportretter-nett@veronicavangroningen-41.jpg', name: 'Astrid Ombudstvedt', instrument: 'Trombone' ,category: 'Trombone/Tuba'},
+  { image: '/images/band-members/NSBportretter-nett@veronicavangroningen-17.jpg', name: 'Jesper Kramer-Johansen', instrument: 'Tuba/Cimbasso' ,category: 'Trombone/Tuba'},
 
-  { image: './images/band-members/NSBportretter-nett@veronicavangroningen-26.jpg', name: 'Henrik Smelhus Sjøeng', instrument: 'Trompet' ,category: 'Trompet'},
-  { image: './images/band-members/NSBportretter-nett@veronicavangroningen-47.jpg', name: 'Ola Lømo Ellingsen', instrument: 'Trompet' ,category: 'Trompet'},
-  { image: './images/band-members/kristina.jpg'                                  , name: 'Kristina Fransson', instrument: 'Trompet' ,category: 'Trompet'},
-  { image: './images/band-members/NSBportretter-nett@veronicavangroningen-30.jpg', name: 'Oscar Andreas Haug', instrument: 'Trompet' ,category: 'Trompet'},
+  { image: '/images/band-members/NSBportretter-nett@veronicavangroningen-26.jpg', name: 'Henrik Smelhus Sjøeng', instrument: 'Trompet' ,category: 'Trompet'},
+  { image: '/images/band-members/NSBportretter-nett@veronicavangroningen-47.jpg', name: 'Ola Lømo Ellingsen', instrument: 'Trompet' ,category: 'Trompet'},
+  { image: '/images/band-members/kristina.jpg'                                  , name: 'Kristina Fransson', instrument: 'Trompet' ,category: 'Trompet'},
+  { image: '/images/band-members/NSBportretter-nett@veronicavangroningen-30.jpg', name: 'Oscar Andreas Haug', instrument: 'Trompet' ,category: 'Trompet'},
 
-  { image: './images/band-members/NSBportretter-nett@veronicavangroningen-15.jpg', name: 'Konstantin Helmers', instrument: 'Gitar/Fiolin' ,category: 'Komp'},
-  { image: './images/band-members/NSBportretter-nett@veronicavangroningen-23.jpg', name: 'Philip Granly', instrument: 'Piano' ,category: 'Komp'},
-  { image: './images/band-members/hakon.jpg'                                     , name: 'Håkon Huldt-Nystrøm', instrument: 'Bass' ,category: 'Komp'},
-  { image: './images/band-members/NSBportretter-nett@veronicavangroningen-35.jpg', name: 'Trym Saugstad Karlsen', instrument: 'Trommer' ,category: 'Komp'},
+  { image: '/images/band-members/NSBportretter-nett@veronicavangroningen-15.jpg', name: 'Konstantin Helmers', instrument: 'Gitar/Fiolin' ,category: 'Komp'},
+  { image: '/images/band-members/NSBportretter-nett@veronicavangroningen-23.jpg', name: 'Philip Granly', instrument: 'Piano' ,category: 'Komp'},
+  { image: '/images/band-members/hakon.jpg'                                     , name: 'Håkon Huldt-Nystrøm', instrument: 'Bass' ,category: 'Komp'},
+  { image: '/images/band-members/NSBportretter-nett@veronicavangroningen-35.jpg', name: 'Trym Saugstad Karlsen', instrument: 'Trommer' ,category: 'Komp'},
 
 ]
 
