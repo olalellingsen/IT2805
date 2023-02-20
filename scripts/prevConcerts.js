@@ -12,6 +12,8 @@ class concert {
 //legg til nye konserter her
 const concerts = [
   
+  new concert('25.03.2023','Ella & Frank Meets Basie', '20:00', 'Cosmopolite, Oslo'),
+  new concert('18.02.2023','Det Rekomponerte Nye', '20:00', 'Dokkhuset Scene, Trondheim'),
   new concert('16.02.2023','Det Rekomponerte Nye', '20:00', 'Victoria Nasjonal Jazzscene, Oslo'),
   new concert('16.12.2022','NSBs jul', '20.00', 'Ilen Kirke, Trondheim'),
   new concert('15.12.2022','NSBs jul', '20.00', 'Parkbiografen, Skien'),

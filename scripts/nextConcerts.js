@@ -10,7 +10,6 @@ class concert {
 
 //legg til nye konserter her
 const upcomingConcerts = [
-    new concert('18.02.2023','Det Rekomponerte Nye', '20:00', 'Dokkhuset Scene, Trondheim', 'https://dokkhuset.hoopla.no/sales/event/dennyenorskerekomponert'),
     new concert('25.03.2023','Ella & Frank Meets Basie', '20:00', 'Cosmopolite, Oslo', '')
   ]
   
