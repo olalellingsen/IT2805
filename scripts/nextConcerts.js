@@ -10,7 +10,7 @@ class concert {
 
 //legg til nye konserter her
 const upcomingConcerts = [
-    new concert('25.03.2023','Ella & Frank Meets Basie', '20:00', 'Cosmopolite, Oslo', '')
+   
   ]
   
   
