@@ -9,7 +9,7 @@ class AppFooter extends ModularityComponent {
         <div class="footer-brands">
         <a href="https://sparebankstiftelsen.no/"><img src="/images/sponsor-icons/sbs-logo-positive.png" alt="Sparebankstiftelsen" style="width:80px;height:72px;margin-top:-5px"></a>
         <a href="https://www.homeworkspace.no/"><img src="/images/sponsor-icons/homeworkspace.png" alt="Home Workspace" style="width:60px;height:60px;"></a>
-        <a href="https://ostnorsk.jazzinorge.no/"><img src="/images/Oslo-logo-sort-RGB.png" alt="Oslo kommune" style="width:150px;height:100px;margin-top:-20px;margin-left:-15px;"></a>
+        <a href="https://www.oslo.kommune.no/etater-foretak-og-ombud/kulturetaten/"><img src="/images/Oslo-logo-sort-RGB.png" alt="Oslo kommune" style="width:150px;height:100px;margin-top:-20px;margin-left:-15px;"></a>
           <a href="https://www.kulturradet.no/"><img src="/images/sponsor-icons/kulturrådet.png" alt="Kulturrådet" style="width:150px;height:25px;margin-top:22px"></a>
           <a href="https://jazzforum.jazzinorge.no/"><img src="/images/sponsor-icons/norsk-jazzforum.png" alt="Norsk jazzforum" style="width:120px;height:25px;margin-top:22px"></a>
           <a href="https://ostnorsk.jazzinorge.no/"><img src="/images/sponsor-icons/ostnorsk-logo.png" alt="Østnorsk jazzsenter" style="width:120px;height:48px;margin-top:8px"></a>
