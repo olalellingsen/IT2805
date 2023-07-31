@@ -1,30 +1,32 @@
-class concert {
+
+  class Concert {
     constructor(date, name, timeOfDay, place, ticketLink) {
-      this.name = name
-      this.date = date
-      this.timeOfDay = timeOfDay
-      this.place = place
-      this.ticketLink = ticketLink
+      this.name = name;
+      this.date = date;
+      this.timeOfDay = timeOfDay;
+      this.place = place;
+      this.ticketLink = ticketLink;
     }
   }
-
-//legg til nye konserter her
-const upcomingConcerts = [
-   
-  ]
   
-  
+  // Legg til nye konserter her
+  const upcomingConcerts = [
+    new Concert('26.08', 'NSB feat. Adam Rapa', '19:30', 'Sentralen', 'https://tix.no/nb/sentralen/buyingflow/tickets/23350/44922'),
+  ];
   
   for (let i = 0; i < upcomingConcerts.length; i++) {
-    const nextConcert = upcomingConcerts[i]
-    const node = document.createElement('p')
+    const nextConcert = upcomingConcerts[i];
+    const node = document.createElement('p');
   
-    //ticket link
-    const a = document.createElement('a'); 
-    a.title = "Billetter";  
-    a.href = nextConcert.ticketLink
+    // Ticket link
+    const a = document.createElement('a');
+    a.title = 'Billetter';
+    a.href = nextConcert.ticketLink;
+    a.innerText = 'Kjøp billetter';
   
-    //display text in calendar
-    node.innerText = nextConcert.date + ', '+nextConcert.timeOfDay + '\n- ' + nextConcert.name+'\n@ '+nextConcert.place+ '\n '+'\n\n'
-    document.getElementById('upcoming-concerts').appendChild(node)
+    // Display text in calendar
+    node.innerText = '\n'+nextConcert.date + ', ' + nextConcert.timeOfDay + '\n' + nextConcert.name + '\n@' + nextConcert.place + '\n ';
+    node.appendChild(a);
+    document.getElementById('upcoming-concerts').appendChild(node);
   }
+  
