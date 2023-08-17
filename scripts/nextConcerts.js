@@ -11,7 +11,7 @@
   
   // Legg til nye konserter her
   const upcomingConcerts = [
-    new Concert('26.08', 'NSB feat. Adam Rapa', '19:30', 'Sentralen', 'https://tix.no/nb/sentralen/buyingflow/tickets/23350/44922'),
+    new Concert('27.08', 'NSB feat. Adam Rapa', '18:00', 'Sentralen', 'https://tix.no/nb/sentralen/buyingflow/tickets/23350/44922'),
   ];
   
   for (let i = 0; i < upcomingConcerts.length; i++) {
